@@ -74,45 +74,46 @@
         	<div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 text-center heading-section ftco-animate">
               <span>3D Modeling</span>
-              <h2>AutoDesk Maya: Polygonal Modeling Tools</h2>
+              <h2>AutoDesk Maya: NURBS Modeling</h2>
             </div>
           </div>
           <div class="row d-flex justify-content-center">
             <div class="col-md-8">
-             <h2 class="mb-3">Desk</h2>
+             <h2 class="mb-3">Lamp</h2>
               <p>
 				 <center> <p>
-				<img src="../../images/desk-ref.png" alt="" class="img-fluid">
+				<img src="../../images/lamp-ref.png" alt="" class="img-fluid">
 					  </p></center>
-				For the this modeling exercise, we have to model a desk (as shown above) using various modeling tools such as extrude, multi-cut, edge loop too, smooth, bevel, and add divisions. 
+				For the this modeling exercise, we have to model a lamp (as shown above) using NURBS, utilitizing NURBS tools only. For this model NURBS tools that were used are: curve, revolve, reverse direction, loft, union, and difference.
               </p>
 				<p>
-                <img src="../../images/desk-2 2.jpeg" alt="" class="img-fluid">
-				The image shown above, is my final output. To create this, I used a cube and resize it to be just the dimensions of the top, so that it would be thin. However, half way through on planning how to create the table I realized that the table is symmetric. Meaning, that I will have to create the <strong>exact</strong> modifications to the other side that I have done on the first side.
-
+                <img src="../../images/lamp-1.png" alt="" class="img-fluid">
+				The image shown above, is my final output. To create this, I used a curve tracing half (on y-axis) of the lamp stand on the reference image. I then revolved this to create the stand. How ever the normal was reversed. So I reverted, then selected the curve and reversed the direction and redid the revolve.
               </p>
 				<p>
-                <img src="../../images/desk-4.png" alt="" class="img-fluid">
-				This is when I discovered the <strong>Mirror Tool</strong>, this allows me to only create half of the table and mirror it at -180 degrees. Lessing the workload and making the desk actually look symmetrical. Otherwise, my desk would look like it's badly done if the lower drawer on the left is bigger that the one on the right.
-
+                <img src="../../images/lamp-2.png" alt="" class="img-fluid">
+				For the shade, I created a NURBS circle transposed it on Y to be higher, then created another NURBS circle above it with a smaller radious. Then, I selected both circles, bottom to top, then selected loft.
               </p>
 				<p>
-                <img src="../../images/desk-7.png" alt="" class="img-fluid">
-				I used insert edge loop tool to create it desk <e>a lot</e> to add divisions. From the edge loops, I extruded parts that needs to be translated or scaled to create the intended "design."
-
+                <img src="../../images/lamp-3.png" alt="" class="img-fluid">
+				The base was the most excrutiating part of the model. It was a challengin figuring out the sequence of operation for the surface booleans. But I figured out that on of the object has to actually cover the other. So I created the four cylinders and combined them using <strong>union</strong>union and removed that shape from the NURBS cube using <strong>difference</strong>. Then I did a union on the lamp base and the stand. 
               </p>
 				<p>
-                <img src="../../images/desk-6.png" alt="" class="img-fluid">
-				After I thought I was done with the first half, I just used the mirror tool to <e>create</e> the other half of the desk. However, I realized that I have not used the extrude to curve tool. So I decided to use this for the handles on the desk. This was the most challenging part. I had to create the curve somewhere else in the world because I could not start it where I wanted it to start and then translate it to move it to where I needs to be.
+                <img src="../../images/lamp-4.png" alt="" class="img-fluid">
+				To connect the lamp base with the shade, I used two cylinders that are thinned out and a torus.
+              </p>
+				<p>
+                <img src="../../images/lamp-7.png" alt="" class="img-fluid">
+				To connect the lamp base with the shade, I used two cylinders that are thinned out and a torus.
               </p>
 				
 				<p>
-                <img src="../../images/desk-9.png" alt="" class="img-fluid">
+                <img src="../../images/lamp-5.png" alt="" class="img-fluid">
 				The handles do not look symmetrical on all drawers because I had to do this one by one and that I could not revert anymore to the model before I mirrored the model.
               </p>
 				
 				<p>
-				<img src="../../images/desk-1 2.jpeg" alt="" class="img-fluid">
+				<img src="../../images/lamp-6.png" alt="" class="img-fluid">
 				I used the bevel tool on the edges of the drawers to create an "angled look."
               </p>
 
