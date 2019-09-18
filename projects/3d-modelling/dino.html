@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Modeling</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/animate.css">
+
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../../css/aos.css">
+
+    <link rel="stylesheet" href="../../css/ionicons.min.css">
+
+    <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../../css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="../../css/flaticon.css">
+    <link rel="stylesheet" href="../../css/icomoon.css">
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+
+    <div class="KW_progressContainer">
+      <div class="KW_progressBar">
+
+      </div>
+    </div>
+    <div class="page">
+    <nav id="colorlib-main-nav" role="navigation">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+      <div class="js-fullheight colorlib-table">
+      	<div class="img" style="background-image: url(../../images/dane-1.png);"></div>
+        <div class="colorlib-table-cell js-fullheight">
+          <div class="row no-gutters">
+            <div class="col-md-12 text-center">
+              <h1 class="mb-4"><a href="../../index.html" class="logo">Dane Acena</a></h1>
+              <ul>
+                <li><a href="../../index.html"><span><small>01</small>Home</span></a></li>
+                <li><a href="../../about.html"><span><small>02</small>CV</span></a></li>
+				<li><a href="../../research.html"><span><small>03</small>Research</span></a></li>
+                <li class="active"><a href="../../projects.html"><span><small>04</small>Projects</span></a></li>
+                <li><a href="https://daneography.myportfolio.com"><span><small>05</small>Captures</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="colorlib-page">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="colorlib-navbar-brand">
+                <a class="colorlib-logo" href="../../index.html"><span class="logo-img" style="background-image: url(../../images/person_1.jpg);"></span>Dane Acena</a>
+              </div>
+              <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="ftco-section">
+        <div class="container mt-5">
+        	<div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span>3D Modeling</span>
+              <h2>AutoDesk Maya: Polygon and Sub-D Modeling Workflows in Maya</h2>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+				
+				<h2 class="mb-3">Desk</h2>
+				 <center> <p>
+				<img src="../../images/pluralsight-dino.png" alt="" class="img-fluid">
+					  </p></center><p>To access subs in Maya 2018: Mesh > Smooth Proxy > subdiv proxy</p>
+				<h2 class="mb-3">1. Setting Up Image Plane</h2>
+				
+				<p>This is great for bringing in a reference image in the viewport. To access the image plane option, in the desired orthographic view, click view > image plane > import image. Additionally, since this shows up in the perspective view but it’s not really that useful there we can turn it off by going to the image’s attribute then selecting look through camera then select the desired view.
+              	</p>
+				<h2 class="mb-3">2. Drawing Profile Curves For the Body</h2>
+				<p>
+				This began by using the EP curve tool to outline the shape of the body of the dinosaur basically creating a curve for the spine and a curve for the underside. After those two, there’s nothing that dictates the width yet, he created another curve between the first two curves that goes through the body. The third curve was then transposed on the x axis and each of the vertices were manipulated to align with the side of the body. Since the number of vertices are not uniform between the three, so he rebuilt the curves. After the curve have equal span, he opened the loft menu and added two span and selected polygon
+              	</p>
+				<h2 class="mb-3">3. Building the Back Leg</h2>
+				<p>
+				This started by evaluating the spans where the back leg is going to be attached and see if there’s enough resolution. It was determined that there is not enough so edge loops were added. The vertices were then manipulated to create a circular face and then delete it to make a hole. A cylinder was then created to make leg and place on the ankle. EP Curve tool was then used to add curve for the leg. Then the faces on the cylinder were select along with the curve then the cylinder was then extruded along the curve. Taper value was manipulated to change the thickness of the leg. The faces on top of the legs were deleted. The vertices on top were selected  then rotated to be closer to the body. The two separate pieces were combined. Each of the vertices on top of the leg is then selected to snap to the vertices on the body and merged.
+              	</p>
+				
+				<h2 class="mb-3">4. Shaping the Body and Leg</h2>
+				<p>To fix the shape of the leg: select>select edge loop tool. But I could not find it on Maya 2018/19.</p>
+				<h2 class="mb-3">5. Extruding Out the Toes</h2>
+				<p>
+				Some of the edges were deleted to lower the resolution. Used offset edge loop to make the knuckle. Used duplicate faces to duplicate the claw
+              	</p>
+				<h2 class="mb-3">6. Building the Arm</h2>
+				<p>
+				Instead of extruding a polygon along a curve. A NURBS circle was extruded along another curve. Held down c and snapped the circle into the curve. Manipulated scale this time instead of taper. Instead of manually snapping and merging the vertices, used bridge by selecting border edge tool.
+              	</p>
+				<h2 class="mb-3">7. Shaping the Arm</h2>
+				<p>
+				Scaling and manipulating the edge loops to shape the arm to better match the reference image.
+              	</p>
+				<h2 class="mb-3">8. Adding the Hand</h2>
+				<p>
+				Duplicated one of the toes and scaled to make the fingers.
+              	</p>
+				<h2 class="mb-3">9. Modeling Wrinkles in the Skin</h2>
+				<p>
+				Adding an edge loop adds an edge around an object. This sometimes smooths out curves or crest flat spots. If an edge is needed just in one area, the split polygon tool can be used.
+              	</p>
+				<h2 class="mb-3">10. Adding Body Detail</h2>
+				<p>
+				Uses split polygon tool to add subtle creases in the body that separates the top and the bottom. Also used insert edge loop tool but with the autocomplete disabled. User has to provide start and end points.
+              	</p>
+            </div> <!-- .col-md-8 -->
+
+          </div>
+        </div>
+      </section>
+
+      <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-5 text-center">
+              <div class="ftco-footer-widget mb-5">
+                <ul class="ftco-footer-social list-unstyled">
+                  <li><a href="https://linkedin.com/in/dane-acena"><span class="icon-linkedin"></span></a></li>
+                  <li><a href="https://github.com/daneography"><span class="icon-github"></span></a></li>
+                  <li><a href="https://instagram.com/daneography"><span class="icon-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true" style="color: red;"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+      </div>
+
+    </div>
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.easing.1.3.js"></script>
+    <script src="../../js/jquery.waypoints.min.js"></script>
+    <script src="../../js/jquery.stellar.min.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/jquery.animateNumber.min.js"></script>
+    <script src="../../js/scrollax.min.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
+    <script src="../../js/jquery.timepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="../../js/google-map.js"></script>
+    <script src="../../js/main.js"></script>
+
+  </body>
+</html>
