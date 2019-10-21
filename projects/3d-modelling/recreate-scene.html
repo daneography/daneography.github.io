@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Elephant</title>
+    <title>Mannequin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -74,116 +74,116 @@
         	<div class="row justify-content-center mb-5 pb-5">
             <div class="col-md-7 text-center heading-section ftco-animate">
               <span>3D Modeling</span>
-              <h2>AutoDesk Maya: Project 1</h2>
+              <h2>AutoDesk Maya: Recreating a Scene</h2>
             </div>
           </div>
           <div class="row d-flex justify-content-center">
             <div class="col-md-8">
-				<img src="../../images/elephant-pers-1.png" alt="" class="img-fluid">
+				<img src="../../images/scene-ref.jpg" alt="" class="img-fluid">
 				<p>
-					September 25, 2019 -- For this first project, we are creating a model of an object that we picked in class. I first thing I thought was to pick the the "<e>boxiest</e> object like a truck but what I got was an elephant. Why that happened, is still a mystery to me.
+					October 21, 2019 -- For this second project, I am recreating a scene from a 2D picture as accurately as I can by creating the models, adding shaders, textures, and lightining. The picture shown above is the scence that I chose. <a href="https://commons.wikimedia.org/wiki/File:Shadow_Play_(9122641559).jpg">Picture Source</a>
 				</p>
-			<h2 class="mb-3">Preprocessing</h2>
+			<h2 class="mb-3">Components</h2>
               	<p>
-				  <img src="../../images/elephant-ref-ortho.jpg" alt="" class="img-fluid">
+				  This scene has some individual components. The major models that needs to be made are the mannequin, the barrel monkeys and their barrel, and the tree. There's two more boxes but those are created by using just a single cube for each.
 				</p>
+			<h3 class="mb-3">Mannequin</h3>
 				<p>
-				  To start, I took some pictures of the of the elephant from different angles. I found it hard to take pictures of the front and back. I also thought that an outline might be better, so I took the photos to Photoshop and created an outline (shown below). In retrospect, I probably did not need this, but I think think made the process of modeling easier. I put this images into the the views in Maya
-				</p>
-				<p>
-				  <img src="../../images/elephant-ref-pers.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				  I did not want to see the reference images in the perspective view, so I set the images to be only seen at their respective cameras.
-				</p>
-				<p>
-				  <img src="../../images/elephant-refImage-ortho.png" alt="" class="img-fluid">
+				  <center><iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/DELzk"></iframe></center>
+				  <strong>Modeling: </strong>I used mostly spheres to create the mannequin. Creating the joints (elbows, wrists, ankles, knees, hips, and shoulders), neck, and abdomens are just plain sphere in varying sizes. The rest required more modification, such as pulling to elongate and flatten the bottom for the head, almost the same for the torso. The waist needed to be flatten from both top and bottom. The forearms, arms, legs, and shins took all similar procedures from a cylinder that I added some edge loops to create softened ends and some more edge loops to added a widened body that tapers.
+					</p>
+				  
+					<center><img src="../../images/scene-mannequin-texture.png" alt="" class="img-fluid"></center>
+					<p>
+					<strong>Shading and Texturing: </strong>
+					To shade the main mannequin, I used a phong to give a little bit of reflectivity. I also added a wood texture file for the color. I had to fix most of the UVs and set most of them as planar because automatic UVs cuts the UVs in weird areas.
+					
+					For the pole that connects the mannequin to the block I used a blinn with a light grey color
 				</p>
 				
+			<h3 class="mb-3">Barrel Monkey</h3>
+				<p>
+				  <center><iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/uWURe"></iframe></center>
+			      <e>Modeling: </e>For the barrel monkeys, I used the texture as a reference image. I started the body with a cylinder, scaled down in an axis to flatten. Then, scaled on another axis for the width of the body and on another for the length of the body. After that, I added edge loops to allow me to extrude the faces for the arms, legs, and face. I repeatedly extruded the faces and adjusting the transformation to closely resemble the reference.
+				</p>
+				  
+					<center><img src="../../images/scene-monkey-texture.png" alt="" class="img-fluid"></center>
+				<p>
+				<e>Shading and Texturing: </e>
+					To texture the barrel monkeys, I used the same reference image I used on creating them as the file for color. I also added fractal bumps on it.
+					
+					The side edges did not have any texture in the begin so I just added a red blinn that is close to the reds in the monkey texture.
+				</p>
+			<h3 class="mb-3">Barrel</h3>
+				<p>
+				  <center><iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/ZWjZ5"></iframe></center>
+				  <e>Modeling: </e>I created the barrel using a cylinder, then added edge loops, and adjusted each edge to add wideness at some parts. Then, I duplicated this, extruded the faces for the bands and deleted the rest. I combined those bands with the main barrel. For the letters, I used the type tool and added a nonlinear bend deform. For the "underline" under the text, I created a cylinder and added a nonlinear bend deform.
+				</p>
+				  
+					<center><img src="../../images/scene-barrel-texture.png" alt="" class="img-fluid"></center>
+				<p>
+					<e>Shading and Texturing: </e>
+					To create a texture for the barrel. I just added a yellow color to a phong, and added a fractal bump.
+				</p>
+			<h3 class="mb-3">Tree</h3>
+				<p>
+				  <center><iframe allowfullscreen webkitallowfullscreen width="640" height="480" frameborder="0" seamless src="https://p3d.in/e/k4dXn"></iframe></center>
+				  <e>Modeling: </e> To create the tree, I started the same way as the monkeys. Then I just added edge loops and extruded the faces. I just randomly kept extruding for the branches then the leaves
+				  </p>
+				<p>
+				  <e>Shading and Texturing: </e>
+					For the tree, I just used a simple blinn
+				</p>
+			<h3 class="mb-3">Two Cubes</h3>
+				<p>
+				  For the two cubes, I just created a simple cube. For the cube that was above the other, I extruded the face in front and scaled it so it can be have different shader and texture.
+				</p>
+			<h3 class="mb-3">Wall and Floor</h3>
+				<p>
+				  For the wall and floor, I created a cube that were enlarged in two axes and scaled down on one to flatten. I added a simple brown lambert.
+					
+				  On the wall, I added two creases using a really long cube and used boolean to create an intersection.
+				</p>
+			<h2 class="mb-3">Scene with Default Lighting</h2>
+				  <center><img src="../../images/scene-front.png" alt="" class="img-fluid"></center>
+			<h2 class="mb-3">Lighting</h2>
+              	<p>
+				  <center><img src="../../images/scene-front.png" alt="" class="img-fluid"></center>
+				  For the lighting, I have three spotlights. Two of them are set to project a red light, placed in almost the same position just offset a little bit. I adjusted the cone and penumbra angles to closely resemble the reference. 
+				</p>
 				
-             <h2 class="mb-3">Modeling the Body</h2>
 				<p>
-				  <img src="../../images/elephantBody.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				  Using the side view of the reference image, I created an outline using the CV curve tools to create three curves for the top, midsection, and underbelly of the elephant, moving control vertices as needed while referencing from the top view. Then, I lofted the three curves to create the body. 
-				</p>
-				<h2 class="mb-3">Modeling the Leg</h2>
-				<p>
-				  <img src="../../images/elephant-leg.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				  To create the leg, I made a hole on the body with 8 sections, then I created a cyclinder with 8 sections. Then I extruded it on a curve. The vertices were then manipulated to create a circular face and then delete it to make a hole. A cylinder was then created to make leg and place on the ankle. EP Curve tool was then used to add curve for the leg. Then the faces on the cylinder were select along with the curve then the cylinder was then extruded along the curve. Taper value was manipulated to change the thickness of the leg. The faces on top of the legs were deleted. The vertices on top were selected  then rotated to be closer to the body. The two separate pieces were combined. Each of the vertices on top of the leg is then selected to snap to the vertices on the body and merged. 
-				</p>
-				<p>
-				  <img src="../../images/elephant-leg2.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				  After creating one leg, I duplicated it for the front. I got excited and I mirrored the body and leg without starting the head and tail. I also added some <e>wrinkles</e> near the belly.
+				  <center><img src="../../images/scene-lighting-default.png" alt="" class="img-fluid"></center>
+				  For the last lightining, I scaled this down, set it to project a yellow light. I tried to place it as close as possible to the tree to depict the same shadow in the reference, however, the shadow disappears when the spotlight gets too close to the tree.
 				</p>
 				
-          	<h2 class="mb-3">Modeling the Tail and Head Base</h2>
 				<p>
-				  <img src="../../images/elephant-body-mirror.png" alt="" class="img-fluid">
+				  <center><img src="../../images/scene-lightning-on.png" alt="" class="img-fluid"></center>
+				  All of the spotlights are given an Arnold exposure of 5 so that it can be seen when rendering in Arnold.
 				</p>
+			<h2 class="mb-3">Final Outcome</h2>
+				<h3 class="mb-3">Original Perspective</h3>
 				<p>
-				  Using the four faces in the rear of the elephant, I added another curve to create a tail, I put a bulge on the end to create an effect the it is budlging since I don't know how to create hair yet.
-				</p>	
+				  <center><img src="../../images/render-pers.jpeg" alt="" class="img-fluid"></center>
+				</p>
+				<h3 class="mb-3">Top Perspective</h3>
 				<p>
-				  <img src="../../images/elephant-pers-3.png" alt="" class="img-fluid">
-				</p>	
-					To create the head, I extruded the face. I also adjusted the pose of the legs my translating and manipulating the vertices on the legs.
+				  <center><img src="../../images/render-top.jpeg" alt="" class="img-fluid"></center>
 				</p>
-			
-				<h2 class="mb-3">Modeling the Trunk</h2>
+				<h3 class="mb-3">Left Perspective</h3>
 				<p>
-				  <img src="../../images/elephant-trunk.png" alt="" class="img-fluid">
+				  <center><img src="../../images/render-left.jpeg" alt="" class="img-fluid"></center>
 				</p>
+				<h3 class="mb-3">Right Perspective</h3>
 				<p>
-				 To create the trunk with a curved top and a flat bottom, I used a three point curve tool to create a semi-circle curve, then a curve to make out the body of the trunk and extruded them.
+				  <center><img src="../../images/render-right.jpeg" alt="" class="img-fluid"></center>
 				</p>
-			  <p>
-				  <img src="../../images/elephant-pers-2.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				 For the end of the the trunk, I selected some vertices to scale them and make the tip wider. After creating the body of the trunk I combined the objects and merged the vertices just the same with the legs.
-				</p>
-			  
-			  <h2 class="mb-3">Modeling the Tusks</h2>
-				<p>
-				  <img src="../../images/elephant-front-wire.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				 To create the tusk, I followed the same process for the legs, and the trunk.
-				</p>
-			  <p>
-				  <img src="../../images/elephant-side.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				 Then, I adjusted the position of the tusks to match the reference.
-				</p>
-			  
-			 <h2 class="mb-3">Modeling the Ears</h2>
-				<p>
-				  <img src="../../images/elephant-front.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				 Creating the ear was the most challenging and sensitive part. I did this by adding edge loops on the side of the head then extruding it. After it has been then desired size I started manipulating it in world and start moving the some of the vertices to give the ear a better shape.
-				</p>
-			  <h2 class="mb-3">Modeling the Eyes</h2>
-			  <p>
-				  <img src="../../images/elephant-side-wire.png" alt="" class="img-fluid">
-				</p>
-				<p>
-				 For the eyes, I made two holes in the head and places the spheres inside. I then extruded the borders to close the gap between the eyes and the head.
-				</p>
+				
 				 
 			 <center>Download project files here:</center>
 				  <center><ul class="ftco-footer-social list-unstyled mt-auto">
-				  <a href="https://drive.google.com/drive/folders/19aEdxaCTwWOrllX2PhZ2_VnC46k7a0qQ?usp=sharing"><span class="icon-cloud-download"></span></a>
+				  <a href="https://drive.google.com/drive/folders/1fURSVurtA2OOiQLyNfuzILrYL6cb1Jjk?usp=sharing"><span class="icon-cloud-download"></span></a>
 				</ul></center>
-			
-				
             </div> <!-- .col-md-8 -->
 			
           </div>
