@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Elephant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/animate.css">
+	  
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css/magnific-popup.css">
+	  
+    <link rel="stylesheet" href="../../css/aos.css">
+	  
+    <link rel="stylesheet" href="../../css/ionicons.min.css">
+	  
+    <link rel="stylesheet" href="../../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../../css/jquery.timepicker.css">
+	  
+	  
+    <link rel="stylesheet" href="../../css/flaticon.css">
+    <link rel="stylesheet" href="../../css/icomoon.css">
+    <link rel="stylesheet" href="../../css/style.css">
+  </head>
+  <body>
+
+    <div class="KW_progressContainer">
+      <div class="KW_progressBar">
+
+      </div>
+    </div>
+    <div class="page">
+    <nav id="colorlib-main-nav" role="navigation">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
+      <div class="js-fullheight colorlib-table">
+      	<div class="img" style="background-image: url(../../images/dane-1.png);"></div>
+        <div class="colorlib-table-cell js-fullheight">
+          <div class="row no-gutters">
+            <div class="col-md-12 text-center">
+              <h1 class="mb-4"><a href="../../index.html" class="logo">Dane Acena</a></h1>
+              <ul>
+                <li><a href="../../index.html"><span><small>01</small>Home</span></a></li>
+                <li><a href="../../about.html"><span><small>02</small>CV</span></a></li>
+				<li><a href="../../research.html"><span><small>03</small>Research</span></a></li>
+                <li class="active"><a href="../../projects.html"><span><small>04</small>Projects</span></a></li>
+                <li><a href="https://daneography.myportfolio.com"><span><small>05</small>Captures</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="colorlib-page">
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="colorlib-navbar-brand">
+                <a class="colorlib-logo" href="../../index.html"><span class="logo-img" style="background-image: url(../../images/person_1.jpg);"></span>Dane Acena</a>
+              </div>
+              <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="ftco-section">
+        <div class="container mt-5">
+        	<div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 text-center heading-section ftco-animate">
+              <span>3D Modeling</span>
+              <h2>AutoDesk Maya: Project 1</h2>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+				<img src="../../images/elephant-pers-1.png" alt="" class="img-fluid">
+				<p>
+					September 25, 2019 -- For this first project, we are creating a model of an object that we picked in class. I first thing I thought was to pick the the "<e>boxiest</e> object like a truck but what I got was an elephant. Why that happened, is still a mystery to me.
+				</p>
+			<h2 class="mb-3">Preprocessing</h2>
+              	<p>
+				  <img src="../../images/elephant-ref-ortho.jpg" alt="" class="img-fluid">
+				</p>
+				<p>
+				  To start, I took some pictures of the of the elephant from different angles. I found it hard to take pictures of the front and back. I also thought that an outline might be better, so I took the photos to Photoshop and created an outline (shown below). In retrospect, I probably did not need this, but I think think made the process of modeling easier. I put this images into the the views in Maya
+				</p>
+				<p>
+				  <img src="../../images/elephant-ref-pers.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				  I did not want to see the reference images in the perspective view, so I set the images to be only seen at their respective cameras.
+				</p>
+				<p>
+				  <img src="../../images/elephant-refImage-ortho.png" alt="" class="img-fluid">
+				</p>
+				
+				
+             <h2 class="mb-3">Modeling the Body</h2>
+				<p>
+				  <img src="../../images/elephantBody.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				  Using the side view of the reference image, I created an outline using the CV curve tools to create three curves for the top, midsection, and underbelly of the elephant, moving control vertices as needed while referencing from the top view. Then, I lofted the three curves to create the body. 
+				</p>
+				<h2 class="mb-3">Modeling the Leg</h2>
+				<p>
+				  <img src="../../images/elephant-leg.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				  To create the leg, I made a hole on the body with 8 sections, then I created a cyclinder with 8 sections. Then I extruded it on a curve. The vertices were then manipulated to create a circular face and then delete it to make a hole. A cylinder was then created to make leg and place on the ankle. EP Curve tool was then used to add curve for the leg. Then the faces on the cylinder were select along with the curve then the cylinder was then extruded along the curve. Taper value was manipulated to change the thickness of the leg. The faces on top of the legs were deleted. The vertices on top were selected  then rotated to be closer to the body. The two separate pieces were combined. Each of the vertices on top of the leg is then selected to snap to the vertices on the body and merged. 
+				</p>
+				<p>
+				  <img src="../../images/elephant-leg2.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				  After creating one leg, I duplicated it for the front. I got excited and I mirrored the body and leg without starting the head and tail. I also added some <e>wrinkles</e> near the belly.
+				</p>
+				
+          	<h2 class="mb-3">Modeling the Tail and Head Base</h2>
+				<p>
+				  <img src="../../images/elephant-body-mirror.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				  Using the four faces in the rear of the elephant, I added another curve to create a tail, I put a bulge on the end to create an effect the it is budlging since I don't know how to create hair yet.
+				</p>	
+				<p>
+				  <img src="../../images/elephant-pers-3.png" alt="" class="img-fluid">
+				</p>	
+					To create the head, I extruded the face. I also adjusted the pose of the legs my translating and manipulating the vertices on the legs.
+				</p>
+			
+				<h2 class="mb-3">Modeling the Trunk</h2>
+				<p>
+				  <img src="../../images/elephant-trunk.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				 To create the trunk with a curved top and a flat bottom, I used a three point curve tool to create a semi-circle curve, then a curve to make out the body of the trunk and extruded them.
+				</p>
+			  <p>
+				  <img src="../../images/elephant-pers-2.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				 For the end of the the trunk, I selected some vertices to scale them and make the tip wider. After creating the body of the trunk I combined the objects and merged the vertices just the same with the legs.
+				</p>
+			  
+			  <h2 class="mb-3">Modeling the Tusks</h2>
+				<p>
+				  <img src="../../images/elephant-front-wire.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				 To create the tusk, I followed the same process for the legs, and the trunk.
+				</p>
+			  <p>
+				  <img src="../../images/elephant-side.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				 Then, I adjusted the position of the tusks to match the reference.
+				</p>
+			  
+			 <h2 class="mb-3">Modeling the Ears</h2>
+				<p>
+				  <img src="../../images/elephant-front.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				 Creating the ear was the most challenging and sensitive part. I did this by adding edge loops on the side of the head then extruding it. After it has been then desired size I started manipulating it in world and start moving the some of the vertices to give the ear a better shape.
+				</p>
+			  <h2 class="mb-3">Modeling the Eyes</h2>
+			  <p>
+				  <img src="../../images/elephant-side-wire.png" alt="" class="img-fluid">
+				</p>
+				<p>
+				 For the eyes, I made two holes in the head and places the spheres inside. I then extruded the borders to close the gap between the eyes and the head.
+				</p>
+				 
+			 <center>Download project files here:</center>
+				  <center><ul class="ftco-footer-social list-unstyled mt-auto">
+				  <a href="https://drive.google.com/drive/folders/19aEdxaCTwWOrllX2PhZ2_VnC46k7a0qQ?usp=sharing"><span class="icon-cloud-download"></span></a>
+				</ul></center>
+			
+				
+            </div> <!-- .col-md-8 -->
+			
+          </div>
+        </div>
+      </section>
+      
+      <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-5 text-center">
+              <div class="ftco-footer-widget mb-5">
+                <ul class="ftco-footer-social list-unstyled">
+                  <li><a href="https://linkedin.com/in/dane-acena"><span class="icon-linkedin"></span></a></li>
+                  <li><a href="https://github.com/daneography"><span class="icon-github"></span></a></li>
+                  <li><a href="https://instagram.com/daneography"><span class="icon-instagram"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+
+              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true" style="color: red;"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+      </div>
+
+    </div>
+
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.easing.1.3.js"></script>
+    <script src="../../js/jquery.waypoints.min.js"></script>
+    <script src="../../js/jquery.stellar.min.js"></script>
+    <script src="../../js/owl.carousel.min.js"></script>
+    <script src="../../js/jquery.magnific-popup.min.js"></script>
+    <script src="../../js/aos.js"></script>
+    <script src="../../js/jquery.animateNumber.min.js"></script>
+    <script src="../../js/scrollax.min.js"></script>
+    <script src="../../js/bootstrap-datepicker.js"></script>
+    <script src="../../js/jquery.timepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="../../js/google-map.js"></script>
+    <script src="../../js/main.js"></script>
+    
+  </body>
+</html>
