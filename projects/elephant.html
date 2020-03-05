@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Elephant</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="../css/base.css">
+   <link rel="stylesheet" href="../css/main.css">
+   <link rel="stylesheet" href="../css/vendor.css">
+
+   <style type="text/css" media="screen">
+
+   	#styles {
+   		background: white;
+   		padding-top: 12rem;
+   		padding-bottom: 12rem;
+   	}
+   	#styles .row {
+   		max-width: 1024px;
+     	}
+     	#styles .section-intro {
+   		max-width: 800px;
+     	}
+
+   </style>
+
+   <!-- script
+   ================================================== -->
+	<script src="../js/modernizr.js"></script>
+	<script src="../js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="../favicon.png">
+
+</head>
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+   <header>
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="../index.html">DANE</a>
+		      </div>
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li><a href="../index.html#intro" title="">Home</a></li>
+						<li><a href="../index.html#about" title="">About</a></li>
+						<li><a href="../index.html#resume" title="">Resume</a></li>
+						<li><a href="../index.html#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
+			  </ul>
+				</nav>
+   		</div> <!-- /top-bar -->
+
+   	</div> <!-- /row -->
+   </header> <!-- /header -->
+
+   <!-- Style Demo
+   ================================================== -->
+<section id="styles">
+
+   	<div class="row section-intro">
+
+   		<div class="col-twelve">
+
+   			<h1>Elephant</h1>
+
+   			<p class="lead">3D Modeling</p>
+
+		</div>
+
+
+  </div> <!-- /row -->
+
+  <div class="row section-intro">
+		   <div class="fluid-video-wrapper">
+                  <iframe title="vimeo-player" src="https://player.vimeo.com/video/365375287" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+           </div>
+		   <div class="row text-left">
+			   <div class="description-box">
+				   <p class="drop-cap">
+             September 25, 2019 -- For this first project, we are creating a model of an object that we picked in class. I first thing I thought was to pick the the "boxiest object like a truck but what I got was an elephant. Why that happened, is still a mystery to me.
+				   </p>
+			   </div>
+			   <h3>Preprocessing</h3>
+         <center><img src="../images/portfolio/elephant-ref-ortho.jpg" alt="Lego car crash"></center>
+			   <p>To start, I took some pictures of the of the elephant from different angles. I found it hard to take pictures of the front and back. I also thought that an outline might be better, so I took the photos to Photoshop and created an outline (shown below). In retrospect, I probably did not need this, but I think think made the process of modeling easier. I put this images into the the views in Maya
+			   </p>
+         <center><img src="../images/portfolio/elephant-ref-pers.png" alt="Lego car crash"></center>
+         <p>I did not want to see the reference images in the perspective view, so I set the images to be only seen at their respective cameras.</p>
+         <img src="../images/portfolio/elephant-refImage-ortho.png" alt="Lego car crash">
+
+
+			   <h3>Modelling the Body</h3>
+         <center><img src="../images/portfolio/elephantBody.png" alt="Lego car crash"></center>
+         <p>Using the side view of the reference image, I created an outline using the CV curve tools to create three curves for the top, midsection, and underbelly of the elephant, moving control vertices as needed while referencing from the top view. Then, I lofted the three curves to create the body.
+			   </p>
+
+         <h3>Modelling the Leg</h3>
+         <center><img src="../images/portfolio/elephant-leg.png" alt="Lego car crash"></center>
+         <p>To create the leg, I made a hole on the body with 8 sections, then I created a cyclinder with 8 sections. Then I extruded it on a curve. The vertices were then manipulated to create a circular face and then delete it to make a hole. A cylinder was then created to make leg and place on the ankle. EP Curve tool was then used to add curve for the leg. Then the faces on the cylinder were select along with the curve then the cylinder was then extruded along the curve. Taper value was manipulated to change the thickness of the leg. The faces on top of the legs were deleted. The vertices on top were selected then rotated to be closer to the body. The two separate pieces were combined. Each of the vertices on top of the leg is then selected to snap to the vertices on the body and merged.
+         </p>
+         <center><img src="../images/portfolio/elephant-leg2.png" alt="Lego car crash"></center>
+         <p>After creating one leg, I duplicated it for the front. I got excited and I mirrored the body and leg without starting the head and tail. I also added some wrinkles near the belly.
+         </p>
+
+         <h3>Modeling the Tail and Head Base</h3>
+         <center><img src="../images/portfolio/elephant-body-mirror.png" alt="Lego car crash"></center>
+         <p>Using the four faces in the rear of the elephant, I added another curve to create a tail, I put a bulge on the end to create an effect the it is budlging since I don't know how to create hair yet.
+         </p>
+         <center><img src="../images/portfolio/elephant-pers-3.png" alt="Lego car crash"></center>
+         <p>To create the head, I extruded the face. I also adjusted the pose of the legs my translating and manipulating the vertices on the legs.
+         </p>
+
+         <h3>Modeling the Trunk</h3>
+         <center><img src="../images/portfolio/elephant-trunk.png" alt="Lego car crash"></center>
+         <p>To create the trunk with a curved top and a flat bottom, I used a three point curve tool to create a semi-circle curve, then a curve to make out the body of the trunk and extruded them.
+         </p>
+         <center><img src="../images/portfolio/elephant-pers-2.png" alt="Lego car crash"></center>
+         <p>For the end of the the trunk, I selected some vertices to scale them and make the tip wider. After creating the body of the trunk I combined the objects and merged the vertices just the same with the legs.
+         </p>
+
+         <h3>Modeling the Tusks</h3>
+         <center><img src="../images/portfolio/elephant-front-wire.png" alt="Lego car crash"></center>
+         <p>To create the tusk, I followed the same process for the legs, and the trunk.
+         </p>
+         <center><img src="../images/portfolio/elephant-side.png" alt="Lego car crash"></center>
+         <p>Then, I adjusted the position of the tusks to match the reference.
+         </p>
+
+         <h3>Modeling the Ears</h3>
+         <center><img src="../images/portfolio/elephant-front.png" alt="Lego car crash"></center>
+         <p>Creating the ear was the most challenging and sensitive part. I did this by adding edge loops on the side of the head then extruding it. After it has been then desired size I started manipulating it in world and start moving the some of the vertices to give the ear a better shape.
+         </p>
+
+         <h3>Modeling the Eyes</h3>
+         <center><img src="../images/portfolio/elephant-side-wire.png" alt="Lego car crash"></center>
+         <p>I used various type of shading and texturing for the elephant. I used lambert for most of the part of the elephant, the body, toes, and trunks. I used Blinn for the eye so it has some reflectivity, I had to lower the specular value to prevent it becoming very light.
+         </p>
+
+         <h3>Shading and Texturing</h3>
+         <p>For the eyes, I made two holes in the head and places the spheres inside. I then extruded the borders to close the gap between the eyes and the head.
+         </p>
+
+         <h3>Lighting</h3>
+         <p>I used a three-point lighting system using three spot lights to illuminate the elephant. The background also helped in lighting. I added an environment color from a 360 image.
+         </p>
+
+         <h3>Rendering</h3>
+         <p>To render this I used Arnold Renderer, I made sure that the lights have the right exposure so that Arnold renderer can capture this. On tthe render settings, I set it up to export PNGs for each frame, then imported these photos in Premiere Pro to make this into a video.
+         </p>
+
+
+	   </div>
+     <p>
+     <a class="button" href="https://drive.google.com/drive/folders/19aEdxaCTwWOrllX2PhZ2_VnC46k7a0qQ">Download Project Files <i class="fa fa-cloud-download-alt"></i></a>
+   </p>
+    </div>
+
+
+  </section>
+   <!--styles -->
+
+
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+   		</div>
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div>
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+
+   	</div> <!-- /contact-form -->
+
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">
+            <li><a href="http://dacena.me/linkedin"><i class="fab fa-linkedin fa-lg"></i></a></li>
+            <li><a href="http://dacena.me/orcid"><i class="fab fa-orcid fa-lg"></i></a></li>
+            <li><a href="http://dacena.me/github"><i class="fab fa-github fa-lg"></i></a></li>
+            <li><a href="http://dacena.me/snaps"><i class="fas fa-camera-retro fa-lg"></i></a></li>
+			   </ul>
+
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+		        	<span>© Copyright Kards 2016.</span>
+		        	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+		         </div>
+	      	</div>
+
+          <div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top">
+               <i class="fas fa-hand-point-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->
+   </footer>
+
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="../js/jquery-2.1.3.min.js"></script>
+   <script src="../js/plugins.js"></script>
+   <script src="../js/main.js"></script>
+
+</body>
+
+</html>
